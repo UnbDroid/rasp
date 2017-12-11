@@ -1,0 +1,42 @@
+en
+run as follows
+make sure your raspian is connected on the internet
+chmod +x config_hotspot.sh
+sudo ./config_hotspot.sh network_name network_password
+Attention!!! This script reconfigures the following files:
+sudo ./config_hotspot.sh nome_da_rede senha_da_rede
+Atenção!!! Este script reconfigura os seguintes arquivos:
+/etc/udev/rules.d/70-persistent-net.rules
+/etc/network/interfaces
+/etc/hostapd/hostapd.conf
+/etc/dnsmasq.conf
+/etc/hostapdstart
+/etc/rc.local
+
+pt_br
+Rode da seguinte maneira
+certifique-se que seu raspian está conectado na internet
+chmod +x config_hotspot.sh
+sudo ./config_hotspot.sh nome_da_rede senha_da_rede
+Atenção!!! Este script reconfigura os seguintes arquivos:
+/etc/udev/rules.d/70-persistent-net.rules
+/etc/network/interfaces
+/etc/hostapd/hostapd.conf
+/etc/dnsmasq.conf
+/etc/hostapdstart
+/etc/rc.local
+
+pt_br
+O objetivo deste script é usar o raspberry pi zero w para gerar uma rede wifi ao mesmo tempo que conectasse em outra e roteia a conexão, usando apenas o wifi incluso, sem precisar de adaptadores externos.
+
+Isto facilita muito para embarcar o Raspi em aplicações (robôs por exemplo) por permite acesso via SSH sem a necessidade de um roteador, ao mesmo tempo que não perde a capacidade de se conectar a internet para baixar pacotes e softwares.
+
+Aparentemente está tudo funcionado. Recomendo forte mente que isto seja testado em um cartão SD de testes.
+
+
+en
+The purpose of this script is to use raspberry pi zero w to generate a wifi network while connecting to another and routes the connection, using only wifi built in, without needing external adapters.
+
+This makes it much easier to ship Raspi to applications (robots for example) by allowing SSH access without the need for a router, while not losing the ability to connect to the internet to download packages and software.
+
+Apparently everything is working. I strongly recommend that this be tested on a SD test card.
